@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Lucie Satrapová</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header floating-menu">
+        <nav class="desktop-nav">
+            <a href="index.html" class="logo-icon">L<span>S</span>.</a>
+            
+            <div class="nav-divider"></div>
+
+            <ul class="nav-links">
+                <div class="nav-indicator"></div> 
+                <li><a href="index.html" class="nav-item">Domů</a></li>
+                <li><a href="projekty.html" class="nav-item">Projekty</a></li>
+                <li><a href="omne.html" class="nav-item">O mně</a></li>
+                <li><a href="kontakt.html" class="nav-item active-page">Kontakt</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-menu-overlay">
+        <ul class="mobile-links">
+            <li><a href="index.html" style="--i:1;">Domů</a></li>
+            <li><a href="projekty.html" style="--i:2;">Projekty</a></li>
+            <li><a href="omne.html" style="--i:3;">O mně</a></li>
+            <li><a href="kontakt.html" style="--i:4;">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <main class="contact-page-wrapper">
+        
+        <section class="hero-contact-waves">
+            <canvas id="waves-canvas"></canvas> 
+            <div class="container hero-content-center">
+                <h1 class="big-connect-text">SPOJME SE</h1>
+                <p class="fade-in-text">Jsem připravena na nové výzvy.</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-layout reveal delay-1">
+                    
+                    <div class="contact-info-box">
+                        <h2 style="margin-bottom: 30px;">Kontaktní údaje</h2>
+                        <div style="margin-bottom: 25px;">
+                            <h4 style="color: var(--accent); margin-bottom: 5px;">Email</h4>
+                            <a href="mailto:email@priklad.cz" style="font-size: 1.1rem; font-weight: 600;">lucinka@satrapa.cz</a>
+                        </div>
+                        <div style="margin-bottom: 25px;">
+                            <h4 style="color: var(--accent); margin-bottom: 5px;">Sítě</h4>
+                            <div style="display: flex; gap: 15px;">
+                                <a href="https://www.instagram.com/lucasatrapova/" style="font-weight: 600;">Instagram</a>
+                                <a href="https://www.tiktok.com/@luca_satrapova" style="font-weight: 600;">Tiktok</a>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border);">
+                            <h3>Proč spolupracovat?</h3>
+                            <ul style="margin-top: 15px; list-style: none;">
+                                <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                                    <span style="color: var(--accent);">✔</span> Dodržuji termíny
+                                </li>
+                                <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                                    <span style="color: var(--accent);">✔</span> Čistý a validní kód
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 10px;">
+                                    <span style="color: var(--accent);">✔</span> Osobní přístup (IT i Fitness)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2 style="margin-bottom: 30px;">Napiš mi zprávu</h2>
+                        <form action="#" method="POST">
+                            
+                            <div class="form-group">
+                                <label for="name">Jméno a Příjmení</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Jan Novák" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="jan@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="source">Kde jste o mně slyšeli?</label>
+                                <select id="source" name="source" class="form-control">
+                                    <option value="" disabled selected>Vyberte možnost...</option>
+                                    <option value="social">Sociální sítě (IG, LinkedIn)</option>
+                                    <option value="doporuceni">Doporučení od známých</option>
+                                    <option value="web">Vyhledávání / Google</option>
+                                    <option value="jine">Jiné</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">O jakou službu máte zájem?</label>
+                                <select id="service" name="service" class="form-control" required>
+                                    <option value="" disabled selected>Vyberte službu...</option>
+                                    <option value="web">Tvorba Webu / IT</option>
+                                    <option value="design">Design / Grafika (DIM)</option>
+                                    <option value="fitness">Fitness / Jídelníček</option>
+                                    <option value="jine">Jiné / Spolupráce</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Zpráva</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" placeholder="Popište stručně svůj projekt nebo dotaz..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Odeslat zprávu</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content" style="text-align: center;">
+            <p>&copy; 2025 Lucie Satrapová.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

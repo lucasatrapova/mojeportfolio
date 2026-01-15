@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mně | Lucie Satrapová</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <header class="site-header floating-menu">
+        <nav class="desktop-nav">
+            <a href="index.html" class="logo-icon">L<span>S</span>.</a>
+            <div class="nav-divider"></div>
+            <ul class="nav-links">
+                <div class="nav-indicator"></div> 
+                <li><a href="index.html" class="nav-item">Domů</a></li>
+                <li><a href="projekty.html" class="nav-item">Projekty</a></li>
+                <li><a href="omne.html" class="nav-item active-page">O mně</a></li>
+                <li><a href="kontakt.html" class="nav-item">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-menu-overlay">
+        <ul class="mobile-links">
+            <li><a href="index.html" style="--i:1;">Domů</a></li>
+            <li><a href="projekty.html" style="--i:2;">Projekty</a></li>
+            <li><a href="omne.html" style="--i:3;">O mně</a></li> 
+            <li><a href="kontakt.html" style="--i:4;">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <main class="contact-page-wrapper"> 
+        
+        <section class="hero-contact-waves" style="height: 40vh;">
+            <div class="container hero-content-center">
+                <h1 class="big-connect-text" style="font-size: 4rem;">VÍC NEŽ KÓD</h1>
+                <p class="fade-in-text">Poznejte člověka za klávesnicí.</p>
+            </div>
+        </section>
+
+        <section class="container" style="padding-bottom: 100px;">
+            
+            <div class="about-bio reveal">
+                <div class="bio-text">
+                    <h2>Kdo jsem?</h2>
+                    <p>
+                        Ahoj! Jsem Lucie, studentka IT se zápalem pro tvorbu digitálních produktů. 
+                        Neberu programování jen jako psaní řádků kódu, ale jako způsob, jak řešit problémy a tvořit něco, co lidem usnadní život.
+                    </p>
+                    <p>
+                        Kromě školy se věnuji samostudiu moderních technologií. Fascinuje mě propojení logiky (backend) a kreativity (frontend/design).
+                    </p>
+                </div>
+                <div class="bio-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Roky studia</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projektů</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Chuti se učit</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--border); margin: 80px 0;">
+
+            <div class="fitness-split-section reveal delay-1">
+                
+                <div class="fitness-left-info">
+                    <span class="fit-tag">Lifestyle</span>
+                    <h2>Harmonie těla<br>a mysli</h2>
+                    <p>
+                        Fitness se aktivně věnuji už <strong>2 roky</strong>. Za tu dobu se z občasné aktivity stala vášeň a pevná součást mého denního režimu. 
+                    </p>
+                    <p>
+                        Není to pro mě jen o formování postavy, ale především o <strong>disciplíně a psychohygieně</strong>. 
+                        Trénink mě učí trpělivosti, důslednosti a chuti na sobě neustále pracovat a posouvat své limity, což se pozitivně odráží ve všech oblastech mého života.
+                    </p>
+                    
+                    <div class="mini-quote">
+                        "Nehledej zkratky, pracuj na základech."
+                    </div>
+
+                    <div class="fitness-photo-wrapper">
+                        <img src="img/ja.png" alt="Lucie Fitness" class="fitness-photo">
+                    </div>
+
+                </div>
+
+                <div class="fitness-right-cards">
+                    
+                    <div class="fit-service-card">
+                        <div class="fit-card-top red-gradient">
+                            <span>💪</span>
+                            <h3>Trénink</h3>
+                        </div>
+                        <div class="fit-card-body">
+                            <p>Silový trénink zaměřený na tvarování postavy a pevné zdraví.</p>
+                            <ul>
+                                <li>Silová příprava</li>
+                                <li>Hypertrofie</li>
+                                <li>Konzultace techniky</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="fit-service-card highlight-card">
+                        <div class="fit-card-top green-gradient">
+                            <span>🥑</span>
+                            <h3>Jídelníček</h3>
+                        </div>
+                        <div class="fit-card-body">
+                            <p>Udržitelná strava bez extrémů. Makra, recepty a energie.</p>
+                            <ul>
+                                <li>Jídelníčky na míru</li>
+                                <li>Výpočet maker</li>
+                                <li>Flexibilní dieta</li>
+                            </ul>
+                            <a href="kontakt.html" class="fit-btn-small">Chci jídelníček</a>
+                        </div>
+                    </div>
+
+                    <div class="fit-service-card">
+                        <div class="fit-card-top yellow-gradient">
+                            <span>🧠</span>
+                            <h3>Zkušenosti</h3>
+                        </div>
+                        <div class="fit-card-body">
+                            <p>Neustálé vzdělávání v oblasti anatomie, tréninku a výživy.</p>
+                            <ul>
+                                <li>2 roky aktivní praxe</li>
+                                <li>Studium trendů</li>
+                                <li>Mindset coaching</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           
+
+            <hr style="border: 0; border-top: 1px solid var(--border); margin: 80px 0;">
+
+            <div class="skills-section reveal delay-2">
+                <h2 style="text-align: center; margin-bottom: 50px;">Tech Stack & Nástroje</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">💻</div>
+                        <h3>Vývoj</h3>
+                        <ul>
+                            <li>HTML5 / CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>PHP / MySQL</li>
+                            <li>Git / GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Design</h3>
+                        <ul>
+                            <li>Figma / Adobe XD</li>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>UI / UX Principy</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🎬</div>
+                        <h3>Ostatní</h3>
+                        <ul>
+                            <li>DaVinci Resolve (Střih)</li>
+                            <li>MS Office / 365</li>
+                            <li>Správa sítí (Základy)</li>
+                            <li>Angličtina (B2)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content" style="text-align: center;">
+            <p>&copy; 2025 Lucie Satrapová.</p>
+        </div>
+    </footer>
+
+    <div id="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

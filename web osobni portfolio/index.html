@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucie Satrapová | Portfolio</title>
+    <meta name="description" content="Portfolio studenta - Webové projekty a grafická tvorba.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <header class="site-header floating-menu">
+    <nav class="desktop-nav">
+        <a href="index.html" class="logo-icon">L<span>S</span>.</a>
+        
+        <div class="nav-divider"></div>
+
+        <ul class="nav-links">
+            <div class="nav-indicator"></div> 
+            <li><a href="index.html" class="nav-item">Domů</a></li>
+            <li><a href="projekty.html" class="nav-item">Projekty</a></li>
+            <li><a href="omne.html" class="nav-item">O mně</a></li>
+            <li><a href="kontakt.html" class="nav-item">Kontakt</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+</header>
+
+    <div class="mobile-menu-overlay">
+        <ul class="mobile-links">
+            <li><a href="index.html" style="--i:1;">Domů</a></li>
+            <li><a href="projekty.html" style="--i:2;">Projekty</a></li>
+            <li><a href="omne.html" style="--i:3;">O mně</a></li>
+            <li><a href="kontakt.html" style="--i:4;">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                
+                <div class="hero-text">
+                    <h1>Tvořím digitální <br><span style="color: var(--accent);">zážitky & design</span></h1>
+                    <p style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 30px; opacity: 0.8; max-width: 500px;">
+                        Jsem webová designérka a studentka IT se zaměřením na UI a funkční kód.
+                    </p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="projekty.html" class="btn btn-primary">Moje práce</a>
+                        <a href="kontakt.html" class="btn btn-secondary">Kontaktovat</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <img src="img/avatar-3d.png" alt="3D Avatar" class="hero-3d-char">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="featured-projects" style="padding: 100px 0;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 60px;" class="reveal">
+                    <h1>PROJEKTY</h1>
+                    <p>Ukázka dvou projektů, na kterých jsem pracovala.</p>
+                </div>
+                
+                <div class="featured-grid">
+    
+                    <div class="featured-card reveal delay-1"
+                        data-title="Webová Aplikace"
+                        data-tag="WWW / Frontend"
+                        data-desc="Cílem této práce bylo navrhnout a implementovat kompletní webové řešení pro fiktivní hotelové zařízení.<br><br>Projekt je koncipován jako moderní 'one-page' web, který zahrnuje funkční rezervační systém, interaktivní prohlídku pokojů, ceník služeb a modul pro recenze.<br><br>Důraz byl kladen na plnou responzivitu, čistý kód a intuitivní UX design, který provede návštěvníka od prohlídky až po finální rezervaci."
+                        data-images="img/hotel elegance.png, img/hotel elegance 1.png, img/hotel elegance 2.png, img/hotel elegance 3.png"> <div class="featured-img-wrapper">
+                            <img src="img/hotel elegance.png" alt="Hlavní náhled" class="featured-img" loading="lazy">
+                        </div>
+                        <div class="featured-content">
+                            <span class="tag">WWW / Frontend</span>
+                            <h3 style="font-size: 1.5rem; margin: 10px 0;">Fiktivní web hotelu Elegance</h3>
+                            <p style="color: #666;">Moderní responzivní web s důrazem na UX.</p>
+                            <div class="featured-arrow">➜</div>
+                        </div>
+                    </div>
+
+                    <div class="featured-card reveal delay-2"
+                        data-title="Geometrická stylizace"
+                        data-tag="DIM / Grafika"
+                        data-desc="Tento projekt se zaměřil na digitální grafiku. Úkolem bylo vytvořit stylizovaný obraz podle reálné fotografie s využitím pouze geometrických tvarů.<br><br>Celá práce vznikla ve vektorovém editoru CorelDRAW. Výsledkem je unikátní kompozice, která rozkládá realitu na základní formy a barvy."
+                        data-image="img/dim projekt.jpg"> <div class="featured-img-wrapper">
+                            <img src="img/dim projekt.jpg" alt="Hlavní náhled" class="featured-img" loading="lazy">
+                        </div>
+                        <div class="featured-content">
+                            <span class="tag">DIM / Grafika</span>
+                            <h3 style="font-size: 1.5rem; margin: 10px 0;">Geometrická stylizace</h3>
+                            <p style="color: #666;">Vektorová kresba z geometrických tvarů (Corel).</p>
+                            <div class="featured-arrow">➜</div>
+                        </div>
+                    </div>
+
+                <div style="text-align: center; margin-top: 60px;" class="reveal delay-3">
+                    <a href="projekty.html" class="btn btn-secondary">Zobrazit všechny projekty</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="personal-strip reveal">
+            <div class="container">
+                <div class="personal-content">
+                    <img src="img/profilovka.JPG" alt="Lucie Satrapová" class="avatar-circle"> 
+                    <div class="personal-text">
+                        <h3>Lucie Satrapová</h3>
+                        <p>Mám zkušenosti s moderním webdesignem a ráda se učím nové technologie.</p>
+                        <a href="kontakt.html" class="btn btn-primary" style="font-size: 0.9rem; padding: 10px 20px;">Kontaktuj mě</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-me" style="padding: 80px 0;">
+            <div class="container about-split">
+                
+                <div class="about-left reveal">
+                    <h2 style="margin-bottom: 20px;">Něco o mně</h2>
+                    <p style="margin-bottom: 20px; opacity: 0.8;">
+                        Jsem studentka oboru IT se zápalem pro digitální tvorbu. Baví mě propojovat kód s grafikou a hledat kreativní řešení.
+                    </p>
+                    <p style="opacity: 0.8;">
+                        Sleduji trendy v UX designu a zkouším nové nástroje jako je Figma.
+                    </p>
+
+                    <a href="omne.html" class="btn-explore">
+                        Více o mně <span class="arrow">➜</span>
+                    </a>
+                </div>
+
+                <div class="about-right-stack">
+                    <div class="about-item reveal delay-1">
+                        <h3>🎓 Vzdělání</h3>
+                        <p style="font-size: 0.9rem; color: #666;">Studentka IT a multimediální komunikace na střední odborné škole automobilní, informatiky a gimnázium Weilova v Praze. Zaměření na vývoj a multimédia.</p>
+                    </div>
+                    <div class="about-item reveal delay-2">
+                        <h3>💻 Zkušenosti</h3>
+                        <p style="font-size: 0.9rem; color: #666;">HTML/CSS/JS/PHP, úprava fotek, střih videa.</p>
+                    </div>
+                    <div class="about-item reveal delay-3">
+                        <h3>⚡ Hobby</h3>
+                        <p style="font-size: 0.9rem; color: #666;">Fitness, fotografie, cestování, digitální umění.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content" style="text-align: center;">
+            <p>&copy; 2025 Lucie Satrapová.</p>
+            <?php if(file_exists('counter.php')) { include 'counter.php'; } ?>
+        </div>
+    </footer>
+
+
+    <div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        
+        <div class="modal-body-gallery">
+            <div class="modal-text-section">
+                <span id="modal-tag" class="tag"></span>
+                <h2 id="modal-title" style="margin: 10px 0 20px; font-size: 2rem;"></h2>
+                <p id="modal-desc" style="color: #666; line-height: 1.6;"></p>
+            </div>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn">❮</button>
+                
+                <div class="carousel-track" id="modal-gallery">
+                    </div>
+
+                <button class="carousel-btn next-btn">❯</button>
+                
+                <div class="carousel-counter" id="carousel-counter"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <div id="back-to-top" title="Nahoru">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+    </svg>
+</div>
+    <script src="js/main.js"></script>
+</body>
+</html>
