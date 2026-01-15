@@ -29,3 +29,6 @@ HTML5 Canvas API (interaktivní animace částic/vln na pozadí).
 Logika pro galerii obrázků (carousel) a detekci video obsahu.
 
 Google Fonts: Písmo Inter pro moderní a čitelný vzhled.
+
+
+Pro sledování návštěvnosti jsem implementovala nástroj Google Analytics 4. Do hlavičky (<head>) všech podstránek jsem vložila měřicí skript (Global Site Tag - gtag.js). Díky tomu mohu sledovat počet návštěvníků, jejich geografickou polohu a chování na stránce (např. které projekty si prohlížejí nejčastěji).
